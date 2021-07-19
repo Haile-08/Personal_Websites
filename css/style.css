@@ -1,0 +1,118 @@
+:root{
+    --myblack : #101820FF;
+    --mygreen : #006B38FF;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--myblack);
+    color: #fff;
+}
+/*============Nav==========*/
+
+.header-1{
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+}
+@font-face{
+    font-family: haile;
+    src: url(Fuggles-Regular.ttf);
+    font-size: 20px;
+}
+.name{
+    background-color: green;
+    margin-left: 50px;
+    font-family: haile;
+    
+}
+.name a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu{
+    display: flex;
+    background-color:gold;
+    margin-right: 50px;
+    justify-content: space-evenly;
+    padding: 0px 40px 0px 40px;
+    align-items: center;
+}
+.navlist{
+    display:flex;
+
+}
+.navlink{
+    display: flex;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin-right: 20px;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+}
+.navlink:hover{
+    background-color: var(--mygreen);
+    border-radius: 15px;
+}
+
+/*media query */
+@media screen and (max-width:320px){
+    .name{
+        font-size: 10px;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+    .menu{
+        width: 100px;
+    }
+    .navlink{
+        display: none;
+    }
+}
+
+/*==========Home ==========*/
+.home{
+    display: flex;
+    background-color: tomato;
+    justify-content: space-between;
+}
+.text{
+    background-color: turquoise;
+    margin-left: 50px;
+    padding-right: 50px;
+}
+.image{
+    background-color: blueviolet;
+    margin-right: 200px;
+}
+
+.btn{
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    background-color: var(--mygreen);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+@media screen and (max-width:320px){
+    .text{
+        margin-left: 0px;
+        padding-right: 10px;
+
+    }
+    .image{
+        display: flex;
+        align-items: center;
+    }
+    .image img{
+        width: 160px;
+        height: 160px;
+
+    }
+    .text h4{
+        font-size: 10px;
+    }
+}
