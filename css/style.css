@@ -14,7 +14,7 @@ body{
 
 .header-1{
     display: flex;
-    background-color: red;
+   
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
 }
@@ -24,7 +24,7 @@ body{
     font-size: 20px;
 }
 .name{
-    background-color: green;
+   
     margin-left: 50px;
     font-family: haile;
     
@@ -35,7 +35,7 @@ body{
 }
 .menu{
     display: flex;
-    background-color:gold;
+   
     margin-right: 50px;
     justify-content: space-evenly;
     padding: 0px 40px 0px 40px;
@@ -76,16 +76,16 @@ body{
 /*==========Home ==========*/
 .home{
     display: flex;
-    background-color: tomato;
+   
     justify-content: space-between;
 }
 .text{
-    background-color: turquoise;
+   
     margin-left: 50px;
     padding-right: 50px;
 }
 .image{
-    background-color: blueviolet;
+    
     margin-right: 200px;
 }
 
@@ -93,7 +93,7 @@ body{
     padding: 10px 20px 10px 20px;
     border-radius: 15px;
     background-color: var(--mygreen);
-    border: 1px solid #fff;
+    border: 0px solid #fff;
     color: #fff;
 }
 
@@ -116,3 +116,27 @@ body{
         font-size: 10px;
     }
 }
+
+
+/*===========about=========*/
+.about{
+    display: flex;
+    
+    
+
+}
+.infor{
+    margin-top: 100px;
+   
+}
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.images img{
+    padding-top: 10px;
+
+}
+
