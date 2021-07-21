@@ -16,7 +16,7 @@ body{
 
 .header-1{
     display: flex;
-   
+    margin-bottom: 50px;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
 }
@@ -70,6 +70,7 @@ body{
     justify-content: space-between;
     padding-bottom: 200px;
     font-family: sans-serif;
+    margin-top: 200px;
 }
 .haile{
     color: var(--mygreen);
@@ -79,7 +80,8 @@ body{
     margin-left: 50px;
     padding-right: 50px;
 }
-.image{
+.image{ 
+    
     margin-right: 200px;
 }
 
@@ -96,7 +98,7 @@ body{
 
 /*===========about=========*/
 .about{
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
 .aboutmin{
     margin-left: 40%;
