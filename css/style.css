@@ -16,7 +16,7 @@ body{
 
 .header-1{
     display: flex;
-    background-color: red;
+   
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
 }
@@ -26,7 +26,7 @@ body{
     font-size: 20px;
 }
 .name{
-    background-color: green;
+    
     margin-left: 50px;
     font-family: haile;
     
@@ -38,7 +38,7 @@ body{
 }
 .menu{
     display: flex;
-    background-color:gold;
+   
     margin-right: 50px;
     justify-content: space-evenly;
     padding: 0px 40px 0px 40px;
@@ -67,17 +67,19 @@ body{
 
 .home{
     display: flex;
-    background-color: tomato;
     justify-content: space-between;
     padding-bottom: 200px;
+    font-family: sans-serif;
+}
+.haile{
+    color: var(--mygreen);
 }
 .text{
-    background-color: turquoise;
+    padding-top: 40px;
     margin-left: 50px;
     padding-right: 50px;
 }
 .image{
-    background-color: blueviolet;
     margin-right: 200px;
 }
 
@@ -87,6 +89,7 @@ body{
     background-color: var(--mygreen);
     border: 0px solid #fff;
     color: #fff;
+    margin-top: 100px;
 }
 
 
@@ -99,7 +102,6 @@ body{
     margin-left: 40%;
     margin-right: 50%;
     
-    background-color: darkslateblue;
 }
 .line{
     width: 120px;
@@ -116,21 +118,22 @@ body{
 
 .main{
     display: flex;
-    background-color: brown;
+   
     align-items: center;
     justify-content: space-between;
     height: 500px;
-    
+    font-family: sans-serif;
 
 }
 .infor{
     margin-top: 100px;
-    background-color: darkgray;
+    margin-left: 50px;
+    
 }
 .images {
     display: flex;
     align-items: center;
-    background-color: cyan;
+    
     margin-top: 40px;
     margin-bottom: 100px;
     height: 500px;
@@ -147,7 +150,7 @@ body{
        color: var(--mygreen);
        display: flex;
        justify-content: center;
-       background-color: seagreen;
+      
 }
 .skillline{
        display: flex;
@@ -160,11 +163,13 @@ body{
        margin-left: 45%;
     }
 .skills{
-    background-color: darkslategray;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding-bottom: 150px;
+    padding-top: 150px;
 }
 .scontainer{
     position: relative;
@@ -275,8 +280,96 @@ svg circle:nth-child(2){
 }
 
 /*===============contact page==============*/
+.icicons{
+    display: flex;
+    justify-content: center;
+    margin: 15% auto;
+}
+.icicons ul li{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--myblack);
+    margin: auto 50px;
+    box-shadow: 3px 3px 10px #353535,
+    -4px -4px 10px rgb(2, 2, 2);
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    transition: 0.3s;
+    border-radius: 25px;
+    
+
+}
+.icicons ul li a{
+    color: #fff;
+}
+.icicons ul li:nth-child(1):hover{
+    color: #353535;
+    border-radius: 50%;
+    background-color: #000;
+}
+.icicons ul li:nth-child(2):hover{
+    color: #353535;
+    border-radius: 50%;
+    background-color: #1DA1F2;
+}
+.icicons ul li:nth-child(3):hover{
+    color: #353535;
+    border-radius: 50%;
+    background-color: rgb(41, 202, 41);
+}
+
+/*===========footer========*/
+
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
 
 
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footerbot{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+
+}
+.footerbot p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footerbot span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
 /*media query */
 @media all and (max-width:500px){
     .name{
