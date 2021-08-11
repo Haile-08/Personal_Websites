@@ -7,7 +7,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--myblack);
     color: #fff;
@@ -36,30 +38,84 @@ body{
     color: #fff;
     transition: 2s;
 }
-.menu{
+nav{
+    background-color:var(--mygreen);
+    padding: 20px;
+    width: 80px;
+    position: fixed;
+    left: 1000px;
     display: flex;
-   
-    margin-right: 50px;
-    justify-content: space-evenly;
-    padding: 0px 40px 0px 40px;
     align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.3);
+    transition: width 0.6s linear;
 }
-.navlist{
-    display:flex;
+nav.active{
+    width: 350px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+}
+nav.active ul{
+    width: 100%;
+}
+nav ul li{
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear,opacity 0.6s linear;
+}
+
+nav.active ul li{
+   opacity: 1;
+   transform: rotateY(360deg);
+}
+nav ul li a{
+   position:relative;
+   color: #fff;
+   text-decoration: none;
+   margin: 0 10px;
+   
+}
+.icon{
+   background-color: var(--mygreen);
+   border: 0;
+   cursor: pointer;
+   padding: 0;
+   position: relative;
+   height: 30px;
+   width: 30px;
+}
+.icon:focus{
+   outline: 0;
+}
+.icon .line{
+   background-color: #333;
+   height: 2px;
+   width: 20px;
+   position: absolute;
+   top: 10px;
+   left: 5px;
+   transition: transform 0.6s linear;
 
 }
-.navlink{
-    display: flex;
-    text-decoration: none;
-    font-family: sans-serif;
-    margin-right: 20px;
-    color: #fff;
-    padding: 10px 20px 10px 20px;
+.icon .line2{
+   top: auto;
+   bottom: 10px;
 }
-.navlink:hover{
-    background-color: var(--mygreen);
-    border-radius: 15px;
+nav.active .icon .line1{
+   transform: rotate(-765deg) translateY(5.5px);
 }
+nav.active .icon .line2{
+   transform: rotate(765deg) translateY(-5.5px);
+}
+
 
 
 /*==========Home ==========*/
